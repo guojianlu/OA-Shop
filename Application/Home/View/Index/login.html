@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport"/>
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="__HOME__/css/login.css">
+</head>
+<body>
+
+<div id="content">
+<img class="headerimg" src="__HOME__/img/loginbg.jpg" alt="">
+
+<form action="{:U('checkLogin')}" method="post">
+
+<div class="list">
+
+<div class="item">
+<label for="user">
+<span>用户名</span>
+<input name="uid" id="user" type="text" placeholder="" autofocus>
+</label>
+
+</div>
+
+<div class="item">
+<label for="password">
+<span> 密&nbsp;码</span>
+<input name="uone_pwd" id="password" type="password" placeholder="">
+</label>
+</div>
+
+<div class="item">
+<label for="verify">
+<span> 验证码</span>
+<input name="captcha" id="verify" type="text" maxlength="4" size="8">
+</label>
+<div class="verify"><img class="verifyimg" src="__CONTROLLER__/captcha" onclick="this.src='__CONTROLLER__/captcha/t/'+Math.random()"></div>
+</div>
+
+<div class="login">登录</div>
+</div>
+</form>
+
+</div>
+
+</body>
+<script type="text/javascript" src="__HOME__/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+    //jquery代码
+    $(function () {
+        //给登录按钮绑定点击按钮
+        $('.login').on('click',function () {
+            //事件处理程序
+            $('form').submit();
+        })
+    })
+</script>
+</html>

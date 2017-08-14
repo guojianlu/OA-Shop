@@ -1,0 +1,39 @@
+@charset "utf_8";
+
+body ,h1,ul,h2,p,input,figure {
+    margin: 0;
+    padding: 0;
+}
+#content,ul{
+    width: 350px;
+    height:557px;
+}
+#content ul li{
+    width: 310px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+    list-style: none;
+    border-radius: 6px;
+    font-size: 23px;
+    /*font-weight: bold;*/
+    color: #6193da;
+    /*font-family: "微软雅黑 Light";*/
+    font-family: 微软雅黑;
+    box-sizing: border-box;
+    padding-left: 12px;
+    padding-top: 9px;
+    background-color: #f6f8fe;
+}
+#content ul li span.aaa{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#content ul li.fandan{
+    width: 310px;
+    height: 45px;
+    color: #f6f6f6;
+    padding-left: 105px;
+    background-color: #6193da;
+
+}

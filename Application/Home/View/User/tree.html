@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>组织图</title>
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport"/>
+    <link rel="stylesheet" type="text/css" href="__HOME__/css/jquery.orgchart.css">
+</head>
+<body>
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+<!-- Content Header (Page header) -->
+<section class="content-header">
+<h1 class="fa fa-tree">
+推荐关系图
+</h1>
+</section>
+
+<!-- Main content -->
+<section class="content">
+<div class="row">
+<div class="col-xs-12">
+<div id="chart-container"></div>
+
+</div><!-- /.col -->
+</div><!-- /.row -->
+</section><!-- /.content -->
+</div><!-- /.content-wrapper -->
+
+</body>
+<script type="text/javascript" src="__HOME__/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="__HOME__/js/jquery.orgchart.js"></script>
+<script type="text/javascript">
+
+    var datascource = {
+     'name': 'Lao Lao',
+     'title': 'general manager',
+     'relationship': '001',
+     'children': [
+     { 'name': 'Bo Miao', 'title': 'department manager', 'relationship': '110' },
+     { 'name': 'Su Miao', 'title': 'department manager', 'relationship': '111',
+     'children': [
+     { 'name': 'Tie Hua', 'title': 'senior engineer', 'relationship': '110' },
+     { 'name': 'Hei Hei', 'title': 'senior engineer', 'relationship': '111',
+     'children': [
+     { 'name': 'Pang Pang', 'title': 'engineer', 'relationship': '110' },
+     { 'name': 'Xiang Xiang', 'title': 'UE engineer', 'relationship': '110'}
+     ]
+     }
+     ]
+     },
+     { 'name': 'Yu Jie', 'title': 'department manager', 'relationship': '110' },
+     { 'name': 'Yu Li', 'title': 'department manager', 'relationship': '110' },
+     { 'name': 'Hong Miao', 'title': 'department manager', 'relationship': '110' },
+     { 'name': 'Yu Wei', 'title': 'department manager', 'relationship': '110' },
+     { 'name': 'Chun Miao', 'title': 'department manager', 'relationship': '110' },
+     { 'name': 'Yu Tie', 'title': 'department manager', 'relationship': '110' }
+     ]
+     };
+
+
+
+//    $(".symbol").removeClass("symbol");
+
+    $('#chart-container').orgchart({
+        'data' : datascource,
+        'depth': 2,
+        'nodeTitle': 'name',
+        'nodeContent': 'title'
+    });
+
+//    $('#chart-container').orgchart({
+//            'data' : {
+//                'name':"{$user['uname']}",
+//                'title':"{$user['uid']}",
+//                'relationship': "{$hasChild}",
+//                'children': [
+//                <foreach name="children" item="vol">
+//                {
+//                    'name':"{$vol['uname']}",
+//                    'title':"{$vol['uid']}",
+//                    'relationship':
+//                <if condition="$vol['unum'] > 0 "> "001"
+//                    <else /> "000"
+//                </if>
+//    },
+//    </foreach>
+//    ]
+//
+//    },
+//    'depth': 2,
+//        'nodeTitle': 'name',
+//        'nodeContent': 'title',
+//    'createNode': function($node, data) {
+//        if(data.type==2){
+//            $node.children().eq(0).addClass("gold");
+//            $node.children().eq(1).addClass("gold2");
+//        }else if(data.type==1){
+//            $node.children().eq(0).addClass("silvery");
+//            $node.children().eq(1).addClass("silvery2");
+//        }
+//
+//        var secondMenuIcon = $('<i>', {
+//            'class': 'fa fa-info-circle second-menu-icon',
+//            click: function() {
+//                //alert("asd");
+//                $(this).siblings('.second-menu').toggle();
+//            }
+//        });
+//        //        $img = "";
+//        //        ajaxPost("getUserImg",{id:data.id},function(img){
+//        //            $img = JSON.parse(img);
+//        //        });
+//
+//        //        var secondMenu = "<div class='second-menu'><img class='avatar' src='__PUBLIC__/" +$img + "'></div>";
+//        //        $node.append(secondMenuIcon).append(secondMenu);
+//    }
+//    });
+//
+
+</script>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Organization Chart Plugin</title>
+
+    <link rel="icon" href="__HOME__/plugin/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="__HOME__/plugin/css/font-awesome.min.css">
+    <link rel="stylesheet" href="__HOME__/plugin/css/jquery.orgchart.css">
+    <link rel="stylesheet" href="__HOME__/plugin/css/style.css">
+</head>
+<body>
+<div id="chart-container"></div>
+<script type="text/javascript" src="__HOME__/plugin/js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="__HOME__/plugin/js/jquery.orgchart.js"></script>
+</body>
+
+<script type="text/javascript">
+    $(function($){
+
+        $(function() {
+
+            var datascource = {
+                    'id' :'{$gen['uid']}',
+                    'name': '{$gen['uname']}',
+                    'title': '{$gen['uid']}',
+                    'relationship': '001',
+                    'children': [
+                    <foreach name="children" item="vo">
+                    { 'id': "{$vo['uid']}",
+                        'name': "{$vo['uname']}",
+                        'title': "{$vo['uid']}" ,
+                        'relationship': "{$vo['relationship']}"
+                    },
+                <if>
+            </if>
+            </foreach>
+            ]
+        };
+
+            $('#chart-container').orgchart({
+                'data' : datascource,
+                'depth': 2,
+                'nodeTitle': 'name',
+                'nodeContent': 'title',
+                'nodeId': 'id',
+                'pan': true,
+                'zoom': true,
+                'ajaxURL': {
+                    'children': '__MODULE__/Map/abc/'
+                },
+
+                'createNode': function($node, data) {
+
+                    var secondMenuIcon = $('<i>', {
+                        'class': 'fa fa-info-circle second-menu-icon',
+                        click: function() {
+                            $(this).siblings('.second-menu').toggle();
+                        }
+                    });
+                }
+            });
+        });
+    });
+</script>
+</html>

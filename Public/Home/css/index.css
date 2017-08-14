@@ -1,0 +1,57 @@
+@charset "utf_8";
+
+body ,h1,ul,h2,p,input,figure {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("../img/loginbg.png");
+    width: 100%;
+    background-size:100% 100%;
+}
+#content{
+    width: 350px;
+    height: 630px;
+    margin: 0px auto;
+    background-image: url("../img/indexbg.png");
+}
+#content .tag{
+    width: 350px;
+    height: 23px;
+    background-image: url("../img/tag.png");
+}
+#content .nav{
+    width: 350px;
+    height: 50px;
+    background-image: url("../img/nav.png");
+}
+#content .nav ul{
+    width: 350px;
+    height: 50px;
+}
+#content .nav ul li{
+    width: 87.5px;
+    height: 50px;
+    list-style: none;
+    float: left;
+    /*background-color: #afc4fc;*/
+}
+#content .nav ul li a{
+    display: block;
+    width: 50px;
+    height: 24px;
+    line-height: 24px;
+    margin: 13px auto;
+}
+#content .nav ul li .shouye{
+    background-image: url("../img/wz_shouye.png");
+}
+#content .nav ul li .zhuce{
+    background-image: url("../img/wz_zhuce.png");
+}
+#content .nav ul li .zhuzhi{
+    background-image: url("../img/wz_zhuzhi.png");
+}
+#content .nav ul li .geren{
+    background-image: url("../img/wz_geren.png");
+}

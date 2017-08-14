@@ -1,0 +1,133 @@
+<!doctype html>
+
+<!--
+    2017-4-26
+-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>注册审核</title>
+<link rel="stylesheet" type="text/css" href="__ADMIN__/css/css.css" />
+<link rel="stylesheet" type="text/css" href="__ADMIN__/css/style.css">
+<script type="text/javascript" src="__ADMIN__/js/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="js/page.js" ></script> -->
+</head>
+
+<body>
+	<div id="pageAll">
+		<div class="pageTop">
+			<div class="page">
+				<img src="__ADMIN__/img/coin02.png" /><span><a >首页</a>&nbsp;-&nbsp;<a
+					href="#">注册管理</a>&nbsp;-</span>&nbsp;注册审核
+			</div>
+		</div>
+
+		<div class="page">
+			<!-- banner页面样式 -->
+			<div class="connoisseur">
+				<div class="conform">
+					<div class="cfD">
+						<a href="javascript:;" class="pass"><button class="button">通过审核</button></a>
+						<a href="javascript:;" class="notpass"><button class="button">未通过审核</button></a>
+					</div>
+				</div>
+				<!-- banner 表格 显示 -->
+				<div class="conShow">
+					<table border="1" cellspacing="0" cellpadding="0">
+						<thead>
+						<tr>
+							<td width="40px" class="tdColor tdC"> </td>
+							<td width="120px" class="tdColor">用户号</td>
+							<td width="120px" class="tdColor">推荐人</td>
+							<td width="100px" class="tdColor">昵称</td>
+							<td width="100px" class="tdColor">姓名</td>
+							<td width="160px" class="tdColor">电话</td>
+							<td width="100px" class="tdColor">注册金额</td>
+							<td width="180px" class="tdColor">银行账号</td>
+							<td width="150px" class="tdColor">所属团队</td>
+							<td width="180px" class="tdColor">注册时间</td>
+						</tr>
+						</thead>
+						<tbody>
+						<volist name="data" id="vol">
+						<tr>
+							<td><input type="checkbox" class="uid" value="{$vol.uid}"></td>
+							<td>{$vol.uid}</td>
+							<td>{$vol.upid}</td>
+							<td>{$vol.umember_name}</td>
+							<td>{$vol.uname}</td>
+							<td>{$vol.utel}</td>
+							<td>{$vol.rid}</td>
+							<td>{$vol.ucard}</td>
+							<td>{$vol.tname}</td>
+							<td>{$vol.uregister_time}</td>
+						</tr>
+						</volist>
+						</tbody>
+						
+					</table>
+					<div class="paging">{$show}</div>
+				</div>
+				<!-- banner 表格 显示 end-->
+			</div>
+			<!-- banner页面样式end -->
+		</div>
+
+	</div>
+</body>
+
+<script type="text/javascript">
+	//通过审核按钮点击事件
+	$(function(){
+		//通过审核按钮的点击事件
+		$('.pass').on('click',function(){
+			//事件处理程序
+			var idobj = $(':checkbox:checked');			//获取全部已经选中的checkbox
+			var id = '';		//接收处理后的部门id值，组成id1，id2，id3...
+			//循环遍历idobj对象，获取其中的每一个值
+			
+			for (var i = 0; i < idobj.length; i++) {
+				id += idobj[i].value + ',';
+			}
+
+			if(id==""){
+				alert("暂无数据！");window.parent.frames[0].location.href="{:U('User/user')}";
+			}else{
+			//去掉最后逗号
+			id = id.substring(0,id.length-1);
+			//带着参数跳转到pass方法
+			window.location.href = '__CONTROLLER__/pass/id/' +id;
+			//console.log(id);
+			}
+		})
+	});
+	//通过按钮事件  end
+
+	//未通过审核按钮点击事件
+	$(function(){
+		//通过审核按钮的点击事件
+		$('.notpass').on('click',function(){
+			//事件处理程序
+			var idobj = $(':checkbox:checked');			//获取全部已经选中的checkbox
+			var id = '';		//接收处理后的部门id值，组成id1，id2，id3...
+			//循环遍历idobj对象，获取其中的每一个值
+			
+			for (var i = 0; i < idobj.length; i++) {
+				id += idobj[i].value + ',';
+			}
+
+			if(id==""){
+				alert("暂无数据！");window.parent.frames[0].location.href="{:U('User/user')}";
+			}else{
+			//去掉最后逗号
+			id = id.substring(0,id.length-1);
+			//带着参数跳转到pass方法
+			window.location.href = '__CONTROLLER__/notpass/id/' +id;
+			//console.log(id);
+			}
+		})
+	});
+	//未通过按钮事件  end
+</script>
+</html>

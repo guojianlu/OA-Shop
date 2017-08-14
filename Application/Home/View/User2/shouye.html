@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport"/>
+    <link rel="stylesheet" type="text/css" href="__HOME__/css/shouye.css">
+</head>
+<body>
+<div id="content">
+    <ul class="list">
+        <li>编号 &emsp; <span>{$data['uid']}</span></li>
+        <li>昵称 &emsp;<span>{$data['umember_name']}</span></li>
+        <li>姓名 &emsp;<span>{$data['uname']}</span></li>
+        <li>级别 &emsp;<span>{$data_sid}</span></li>
+        <li>注册人数<span class="aaa">{$count | default = 0}</span>金额<span class="aaa">{$sum_money | default = 0}</span></li>
+        <li>返单次数<span class="aaa">{$count_sum | default = 0}</span>金额<span class="aaa">{$count_money | default = 0}</span></li>
+        <li class="fandan" onclick="fd()">我要返单</li>
+    </ul>
+</div>
+</body>
+<script type="text/javascript" src="__HOME__/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+    function fd() {
+        window.parent.location.href = "/index.php/Home/User/fandan";
+    }
+//    $(function () {
+//        $('.fandan').on('click',function () {
+//            window.location.href="__CONTROLLER__/fandan";
+//        })
+//
+//    })
+</script>
+</html>

@@ -1,0 +1,64 @@
+@charset "utf_8";
+
+body ,h1,ul,h2,p,input,figure {
+    margin: 0;
+    padding: 0;
+}
+#content,ul{
+    width: 350px;
+    height:557px;
+}
+#content ul li{
+    width: 310px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+    list-style: none;
+    border-radius: 6px;
+    font-size: 23px;
+    /*font-weight: bold;*/
+    color: #6193da;
+    font-family: 微软雅黑;
+    /*font-family: "微软雅黑 Light";*/
+    box-sizing: border-box;
+    padding-left: 12px;
+    padding-top: 9px;
+    background-color: #f6f8fe;
+}
+input{
+    font-size: 24px;
+    color: #6193da;
+    width: 160px;
+    max-width: 170px;
+    height: 30px;
+    line-height: 30px;
+    border:solid 2px  #6193da ;
+    border-radius: 5px;
+    padding-left: 8px;
+}
+#huiyuan_id{
+    width: 80px;
+    max-width: 80px;
+    height: 30px;
+    line-height: 30px;
+}
+#captcha{
+    display: block;
+    width: 91px;
+    height: 33px;
+    line-height: 33px;
+    color: #6193da;
+    font-size: 22px;
+    float: right;
+    padding-left: 1px;
+    border-radius: 4px;
+    margin-right: 5px;
+    background-color: #afc4fc;
+}
+#content ul li.register{
+    width: 310px;
+    height: 45px;
+    color: #ffffff;
+    padding-left: 120px;
+    background-color: #6193da;
+}

@@ -1,0 +1,16 @@
+[ 2017-05-18T21:49:21+08:00 ] 127.0.0.1 /index.php/Home/Map/abc/10000/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001528s ]
+SQL: SHOW COLUMNS FROM `js_user` [ RunTime:0.0104s ]
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\project\js\Application\Home\Controller\MapController.class.php 第 56 行.
+SQL: SELECT `uid` FROM `js_user` WHERE ( upid = 10000 )  [ RunTime:0.0005s ]
+SQL: SELECT count(*) as count FROM `js_user` WHERE ( upid = 10000 )  [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`uname`,`umember_name` FROM `js_user` WHERE ( uid = 10000 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`uname`,`umember_name` FROM `js_user` WHERE ( uid = 11312 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`uname`,`umember_name` FROM `js_user` WHERE ( uid = 15984 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`uname`,`umember_name` FROM `js_user` WHERE ( uid = 19968 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`uname`,`umember_name` FROM `js_user` WHERE ( uid = 20001 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`uname`,`umember_name` FROM `js_user` WHERE ( uid = 20002 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`uname`,`umember_name` FROM `js_user` WHERE ( uid = 20003 ) LIMIT 1   [ RunTime:0.0003s ]
+

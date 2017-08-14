@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+/* 2017-04-26  */
+
+body{
+	background-color: #CCC;
+}
+
+.w{
+    width: 1300px;
+}
+
+.index-top {
+	background-color:#666;
+	height:80px;
+}
+
+.index-left{
+    width: 220px;
+    height: 900px;
+    display: inline;
+    float: left;
+}
+
+.index-content{
+	width: 1076px;
+    height: 900px;
+    display: inline;
+    float: left;
+}
+
+
+.index-top div p a{
+	font-size:18px;
+	color: #FFF;
+}
+
+.yh{
+	color: #FFF;
+}
+
+.list-l1 {
+    list-style-type: none;
+    margin: 10px 0px;
+    font-size: 20px;
+}
+
+.list-l1 a{
+	color: #FFF;
+}
+
+.p{
+	font-size: 24px;
+	font-family: "华文琥珀";
+}
+
+.f1{
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.f2{
+    font-size: 24px;
+    background-color: #F00;
+    width: 80px;
+}
+
+.f3{
+    font-size: 20px;
+    background-color: #0F0;
+    width: 120px;
+}
+
+.f4{
+    font-size: 20px;
+    background-color: #F00;
+    width: 120px;
+}
+
+.table-box{
+	border: 2px ridge #FFF;
+}

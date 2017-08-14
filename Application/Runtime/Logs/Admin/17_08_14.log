@@ -1,0 +1,636 @@
+[ 2017-08-14T11:10:02+08:00 ] 127.0.0.1 /index.php/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000301s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000423s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.126102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.126193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000812s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001127s ]
+
+[ 2017-08-14T11:10:02+08:00 ] 127.0.0.1 /index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000831s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001228s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029950s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000836s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001150s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001208s ]
+
+[ 2017-08-14T11:10:12+08:00 ] 127.0.0.1 /index.php/Admin/Register/money.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001147s ]
+SQL: SHOW COLUMNS FROM `js_register_money` [ RunTime:0.0527s ]
+SQL: SELECT * FROM `js_register_money` LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000356s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.096523s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096728s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002653s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002825s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003196s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003366s ]
+
+[ 2017-08-14T11:10:14+08:00 ] 127.0.0.1 /index.php/Admin/User/user.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000814s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001191s ]
+SQL: SHOW COLUMNS FROM `js_user` [ RunTime:0.0106s ]
+SQL: SELECT t1.*,t3.tname as tname FROM js_user as t1,js_team as t3 WHERE ( t1.tid=t3.tid and sid=1 )  [ RunTime:0.0260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+NOTIC: [8] Undefined variable: show F:\web\PHP\Shop\Application\Runtime\Cache\Admin\2a29f2db7e5d066ba9b42bfd58f48adc.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040775s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040894s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001564s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001869s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001963s ]
+
+[ 2017-08-14T11:10:21+08:00 ] 127.0.0.1 /index.php/Admin/Ticash/ticash.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+SQL: SHOW COLUMNS FROM `js_ti_cash` [ RunTime:0.0571s ]
+SQL: SELECT t1.*,t2.uid as uid FROM js_ti_cash as t1,js_user as t2 WHERE ( t1.uid=t2.uid and cash_state=1 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Undefined variable: show F:\web\PHP\Shop\Application\Runtime\Cache\Admin\f0e651f8021e200d9e49bf2790e61586.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033795s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001480s ]
+
+[ 2017-08-14T11:10:23+08:00 ] 127.0.0.1 /index.php/Admin/Back/back.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+SQL: SHOW COLUMNS FROM `js_trade_record` [ RunTime:0.0091s ]
+SQL: SELECT t1.*,t2.uid as uid,t3.tname as tname FROM js_trade_record as t1,js_user as t2,js_team as t3 WHERE ( t1.uid=t2.uid and t1.tid=t3.tid and trade_type=2 and trade_state=0 )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+NOTIC: [8] Undefined variable: show F:\web\PHP\Shop\Application\Runtime\Cache\Admin\9da82b401e90e6d1120fc47ebb4d10f2.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061579s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000895s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000946s ]
+
+[ 2017-08-14T11:10:27+08:00 ] 127.0.0.1 /index.php/Admin/Give/givemoney.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+SQL: SHOW COLUMNS FROM `js_ti_cash` [ RunTime:0.0323s ]
+SQL: SELECT t1.*,t2.uid as uid,t2.ucard as ucard FROM js_ti_cash as t1,js_user as t2 WHERE ( t1.uid=t2.uid and cash_state=2 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] Undefined variable: show F:\web\PHP\Shop\Application\Runtime\Cache\Admin\58ebc3552c74385372f7ff63f96d05c3.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039803s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000850s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000901s ]
+
+[ 2017-08-14T11:10:28+08:00 ] 127.0.0.1 /index.php/Admin/Calculate/calculate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+SQL: SHOW COLUMNS FROM `js_bonus` [ RunTime:0.1748s ]
+SQL: SELECT * FROM `js_bonus` WHERE ( month(bonus_time) = 08 )  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+NOTIC: [8] Undefined variable: show F:\web\PHP\Shop\Application\Runtime\Cache\Admin\85c38e3911c14325d5148dfc5407520f.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036399s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002100s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002265s ]
+
+[ 2017-08-14T11:10:30+08:00 ] 127.0.0.1 /index.php/Admin/Map/map.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `js_user` [ RunTime:0.0159s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined variable: children F:\web\PHP\Shop\Application\Runtime\Cache\Admin\503d69ee1ca07e20af25e111ee3855bc.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019980s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001118s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001208s ]
+
+[ 2017-08-14T11:10:32+08:00 ] 127.0.0.1 /index.php/Admin/Map/abc/10000/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+SQL: SHOW COLUMNS FROM `js_user` [ RunTime:0.0540s ]
+NOTIC: [8192] Function split() is deprecated F:\web\PHP\Shop\Application\Admin\Controller\MapController.class.php 第 66 行.
+SQL: SELECT `uid` FROM `js_user` WHERE ( upid = 10000 )  [ RunTime:0.0005s ]
+SQL: SELECT count(*) as count FROM `js_user` WHERE ( upid = 10000 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `js_user` [ RunTime:0.0084s ]
+SQL: SELECT t1.*,t2.status as sid FROM js_user as t1,js_status as t2 WHERE ( t1.sid=t2.sid and uid = 10000 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `js_trade_record` [ RunTime:0.0177s ]
+SQL: SHOW COLUMNS FROM `js_register_money` [ RunTime:0.0172s ]
+SQL: SELECT `rmoney` FROM `js_register_money` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT count(*) as count FROM `js_user` WHERE ( sid != 1 and sid != 6 and upid = 10000 and month(uregister_time) = 08 )  [ RunTime:0.0007s ]
+SQL: SELECT `trade_money` FROM `js_trade_record` WHERE ( upid = 10000 and trade_type = 2 and trade_state = 1 and month(trade_time) = 08 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\MapController.class.php 第 95 行.
+NOTIC: [8] Undefined variable: money_2 F:\web\PHP\Shop\Application\Admin\Controller\MapController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `js_user` [ RunTime:0.0143s ]
+SQL: SELECT t1.*,t2.status as sid FROM js_user as t1,js_status as t2 WHERE ( t1.sid=t2.sid and uid = 11312 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `rmoney` FROM `js_register_money` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT count(*) as count FROM `js_user` WHERE ( sid != 1 and sid != 6 and upid = 11312 and month(uregister_time) = 08 )  [ RunTime:0.0005s ]
+SQL: SELECT `trade_money` FROM `js_trade_record` WHERE ( upid = 11312 and trade_type = 2 and trade_state = 1 and month(trade_time) = 08 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\MapController.class.php 第 95 行.
+NOTIC: [8] Undefined variable: money_2 F:\web\PHP\Shop\Application\Admin\Controller\MapController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `js_user` [ RunTime:0.0145s ]
+SQL: SELECT t1.*,t2.status as sid FROM js_user as t1,js_status as t2 WHERE ( t1.sid=t2.sid and uid = 15045 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `rmoney` FROM `js_register_money` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT count(*) as count FROM `js_user` WHERE ( sid != 1 and sid != 6 and upid = 15045 and month(uregister_time) = 08 )  [ RunTime:0.0005s ]
+SQL: SELECT `trade_money` FROM `js_trade_record` WHERE ( upid = 15045 and trade_type = 2 and trade_state = 1 and month(trade_time) = 08 )  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\MapController.class.php 第 95 行.
+NOTIC: [8] Undefined variable: money_2 F:\web\PHP\Shop\Application\Admin\Controller\MapController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `js_user` [ RunTime:0.0123s ]
+SQL: SELECT t1.*,t2.status as sid FROM js_user as t1,js_status as t2 WHERE ( t1.sid=t2.sid and uid = 15984 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `rmoney` FROM `js_register_money` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT count(*) as count FROM `js_user` WHERE ( sid != 1 and sid != 6 and upid = 15984 and month(uregister_time) = 08 )  [ RunTime:0.0005s ]
+SQL: SELECT `trade_money` FROM `js_trade_record` WHERE ( upid = 15984 and trade_type = 2 and trade_state = 1 and month(trade_time) = 08 )  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\MapController.class.php 第 95 行.
+NOTIC: [8] Undefined variable: money_2 F:\web\PHP\Shop\Application\Admin\Controller\MapController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `js_user` [ RunTime:0.0306s ]
+SQL: SELECT t1.*,t2.status as sid FROM js_user as t1,js_status as t2 WHERE ( t1.sid=t2.sid and uid = 19968 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `rmoney` FROM `js_register_money` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT count(*) as count FROM `js_user` WHERE ( sid != 1 and sid != 6 and upid = 19968 and month(uregister_time) = 08 )  [ RunTime:0.0004s ]
+SQL: SELECT `trade_money` FROM `js_trade_record` WHERE ( upid = 19968 and trade_type = 2 and trade_state = 1 and month(trade_time) = 08 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\MapController.class.php 第 95 行.
+NOTIC: [8] Undefined variable: money_2 F:\web\PHP\Shop\Application\Admin\Controller\MapController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `js_user` [ RunTime:0.0091s ]
+SQL: SELECT t1.*,t2.status as sid FROM js_user as t1,js_status as t2 WHERE ( t1.sid=t2.sid and uid = 20001 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `rmoney` FROM `js_register_money` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT count(*) as count FROM `js_user` WHERE ( sid != 1 and sid != 6 and upid = 20001 and month(uregister_time) = 08 )  [ RunTime:0.0004s ]
+SQL: SELECT `trade_money` FROM `js_trade_record` WHERE ( upid = 20001 and trade_type = 2 and trade_state = 1 and month(trade_time) = 08 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\MapController.class.php 第 95 行.
+NOTIC: [8] Undefined variable: money_2 F:\web\PHP\Shop\Application\Admin\Controller\MapController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `js_user` [ RunTime:0.0090s ]
+SQL: SELECT t1.*,t2.status as sid FROM js_user as t1,js_status as t2 WHERE ( t1.sid=t2.sid and uid = 20002 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `rmoney` FROM `js_register_money` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT count(*) as count FROM `js_user` WHERE ( sid != 1 and sid != 6 and upid = 20002 and month(uregister_time) = 08 )  [ RunTime:0.0004s ]
+SQL: SELECT `trade_money` FROM `js_trade_record` WHERE ( upid = 20002 and trade_type = 2 and trade_state = 1 and month(trade_time) = 08 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\MapController.class.php 第 95 行.
+NOTIC: [8] Undefined variable: money_2 F:\web\PHP\Shop\Application\Admin\Controller\MapController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `js_user` [ RunTime:0.0079s ]
+SQL: SELECT t1.*,t2.status as sid FROM js_user as t1,js_status as t2 WHERE ( t1.sid=t2.sid and uid = 20003 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `rmoney` FROM `js_register_money` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT count(*) as count FROM `js_user` WHERE ( sid != 1 and sid != 6 and upid = 20003 and month(uregister_time) = 08 )  [ RunTime:0.0003s ]
+SQL: SELECT `trade_money` FROM `js_trade_record` WHERE ( upid = 20003 and trade_type = 2 and trade_state = 1 and month(trade_time) = 08 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\MapController.class.php 第 95 行.
+NOTIC: [8] Undefined variable: money_2 F:\web\PHP\Shop\Application\Admin\Controller\MapController.class.php 第 105 行.
+
+[ 2017-08-14T11:10:38+08:00 ] 127.0.0.1 /index.php/Admin/Map/abc/20001/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001546s ]
+SQL: SHOW COLUMNS FROM `js_user` [ RunTime:0.0090s ]
+NOTIC: [8192] Function split() is deprecated F:\web\PHP\Shop\Application\Admin\Controller\MapController.class.php 第 66 行.
+SQL: SELECT `uid` FROM `js_user` WHERE ( upid = 20001 )  [ RunTime:0.0005s ]
+SQL: SELECT count(*) as count FROM `js_user` WHERE ( upid = 20001 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `js_user` [ RunTime:0.0111s ]
+SQL: SELECT t1.*,t2.status as sid FROM js_user as t1,js_status as t2 WHERE ( t1.sid=t2.sid and uid = 30001 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `js_trade_record` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `js_register_money` [ RunTime:0.0088s ]
+SQL: SELECT `rmoney` FROM `js_register_money` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT count(*) as count FROM `js_user` WHERE ( sid != 1 and sid != 6 and upid = 30001 and month(uregister_time) = 08 )  [ RunTime:0.0004s ]
+SQL: SELECT `trade_money` FROM `js_trade_record` WHERE ( upid = 30001 and trade_type = 2 and trade_state = 1 and month(trade_time) = 08 )  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\MapController.class.php 第 95 行.
+NOTIC: [8] Undefined variable: money_2 F:\web\PHP\Shop\Application\Admin\Controller\MapController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `js_user` [ RunTime:0.0109s ]
+SQL: SELECT t1.*,t2.status as sid FROM js_user as t1,js_status as t2 WHERE ( t1.sid=t2.sid and uid = 30002 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `rmoney` FROM `js_register_money` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT count(*) as count FROM `js_user` WHERE ( sid != 1 and sid != 6 and upid = 30002 and month(uregister_time) = 08 )  [ RunTime:0.0004s ]
+SQL: SELECT `trade_money` FROM `js_trade_record` WHERE ( upid = 30002 and trade_type = 2 and trade_state = 1 and month(trade_time) = 08 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\MapController.class.php 第 95 行.
+NOTIC: [8] Undefined variable: money_2 F:\web\PHP\Shop\Application\Admin\Controller\MapController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `js_user` [ RunTime:0.0437s ]
+SQL: SELECT t1.*,t2.status as sid FROM js_user as t1,js_status as t2 WHERE ( t1.sid=t2.sid and uid = 30005 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `rmoney` FROM `js_register_money` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT count(*) as count FROM `js_user` WHERE ( sid != 1 and sid != 6 and upid = 30005 and month(uregister_time) = 08 )  [ RunTime:0.0003s ]
+SQL: SELECT `trade_money` FROM `js_trade_record` WHERE ( upid = 30005 and trade_type = 2 and trade_state = 1 and month(trade_time) = 08 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\MapController.class.php 第 95 行.
+NOTIC: [8] Undefined variable: money_2 F:\web\PHP\Shop\Application\Admin\Controller\MapController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `js_user` [ RunTime:0.0440s ]
+SQL: SELECT t1.*,t2.status as sid FROM js_user as t1,js_status as t2 WHERE ( t1.sid=t2.sid and uid = 30006 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `rmoney` FROM `js_register_money` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT count(*) as count FROM `js_user` WHERE ( sid != 1 and sid != 6 and upid = 30006 and month(uregister_time) = 08 )  [ RunTime:0.0005s ]
+SQL: SELECT `trade_money` FROM `js_trade_record` WHERE ( upid = 30006 and trade_type = 2 and trade_state = 1 and month(trade_time) = 08 )  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\MapController.class.php 第 95 行.
+NOTIC: [8] Undefined variable: money_2 F:\web\PHP\Shop\Application\Admin\Controller\MapController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `js_user` [ RunTime:0.0165s ]
+SQL: SELECT t1.*,t2.status as sid FROM js_user as t1,js_status as t2 WHERE ( t1.sid=t2.sid and uid = 30007 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `rmoney` FROM `js_register_money` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT count(*) as count FROM `js_user` WHERE ( sid != 1 and sid != 6 and upid = 30007 and month(uregister_time) = 08 )  [ RunTime:0.0004s ]
+SQL: SELECT `trade_money` FROM `js_trade_record` WHERE ( upid = 30007 and trade_type = 2 and trade_state = 1 and month(trade_time) = 08 )  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\MapController.class.php 第 95 行.
+NOTIC: [8] Undefined variable: money_2 F:\web\PHP\Shop\Application\Admin\Controller\MapController.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `js_user` [ RunTime:0.0245s ]
+SQL: SELECT t1.*,t2.status as sid FROM js_user as t1,js_status as t2 WHERE ( t1.sid=t2.sid and uid = 36620 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `rmoney` FROM `js_register_money` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT count(*) as count FROM `js_user` WHERE ( sid != 1 and sid != 6 and upid = 36620 and month(uregister_time) = 08 )  [ RunTime:0.0004s ]
+SQL: SELECT `trade_money` FROM `js_trade_record` WHERE ( upid = 36620 and trade_type = 2 and trade_state = 1 and month(trade_time) = 08 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\MapController.class.php 第 95 行.
+NOTIC: [8] Undefined variable: money_2 F:\web\PHP\Shop\Application\Admin\Controller\MapController.class.php 第 105 行.
+
+[ 2017-08-14T11:10:43+08:00 ] 127.0.0.1 /index.php/Admin/Loginother/loginother.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071246s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001732s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001824s ]
+
+[ 2017-08-14T11:10:49+08:00 ] 127.0.0.1 /index.php/Admin/Loginother/checkLoginother.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+SQL: SHOW COLUMNS FROM `js_user` [ RunTime:0.0649s ]
+SQL: SELECT * FROM `js_user` WHERE ( uid = 20000 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001270s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001333s ]
+
+[ 2017-08-14T11:10:50+08:00 ] 127.0.0.1 /index.php/Admin/Loginother/loginother
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008144s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001674s ]
+
+[ 2017-08-14T11:10:57+08:00 ] 127.0.0.1 /index.php/Admin/Loginother/checkLoginother.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000951s ]
+SQL: SHOW COLUMNS FROM `js_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `js_user` WHERE ( uid = 20002 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001796s ]
+
+[ 2017-08-14T11:11:24+08:00 ] 127.0.0.1 /index.php/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000240s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000376s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013543s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013650s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000933s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000994s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001589s ]
+
+[ 2017-08-14T11:11:24+08:00 ] 127.0.0.1 /index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000926s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008816s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000819s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000870s ]
+
+[ 2017-08-14T11:11:30+08:00 ] 127.0.0.1 /index.php/Admin/User/updatepwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000910s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037794s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037907s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000831s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000978s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000948s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001004s ]
+
+[ 2017-08-14T11:11:33+08:00 ] 127.0.0.1 /index.php/Admin/User/updatepwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000910s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000932s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000991s ]
+
+[ 2017-08-14T11:11:38+08:00 ] 127.0.0.1 /index.php/Admin/Inout/inout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+SQL: SHOW COLUMNS FROM `js_company` [ RunTime:0.0356s ]
+SQL: SELECT `cmoney` FROM `js_company` WHERE ( month(ctime) = 08 and ctype = 1 )  [ RunTime:0.0004s ]
+SQL: SELECT `cmoney` FROM `js_company` WHERE ( month(ctime) = 08 and ctype = 2 )  [ RunTime:0.0003s ]
+SQL: SELECT `cmoney` FROM `js_company` WHERE ( month(ctime) = 08 and ctype = 3 )  [ RunTime:0.0004s ]
+SQL: SELECT `cmoney` FROM `js_company` WHERE ( month(ctime) = 08 and ctype = 4 )  [ RunTime:0.0004s ]
+SQL: SELECT `cmoney` FROM `js_company` WHERE ( month(ctime) = 08 and ctype = 5 )  [ RunTime:0.0004s ]
+SQL: SELECT `cmoney` FROM `js_company` WHERE ( month(ctime) = 08 and ctype = 6 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\InoutController.class.php 第 107 行.
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\InoutController.class.php 第 107 行.
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\InoutController.class.php 第 109 行.
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\InoutController.class.php 第 109 行.
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\InoutController.class.php 第 109 行.
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\InoutController.class.php 第 109 行.
+NOTIC: [2] Division by zero F:\web\PHP\Shop\Application\Admin\Controller\InoutController.class.php 第 113 行.
+NOTIC: [2] Division by zero F:\web\PHP\Shop\Application\Admin\Controller\InoutController.class.php 第 115 行.
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\InoutController.class.php 第 119 行.
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\InoutController.class.php 第 120 行.
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\InoutController.class.php 第 121 行.
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\InoutController.class.php 第 122 行.
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\InoutController.class.php 第 123 行.
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\InoutController.class.php 第 124 行.
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\InoutController.class.php 第 138 行.
+NOTIC: [2] Division by zero F:\web\PHP\Shop\Application\Admin\Controller\InoutController.class.php 第 138 行.
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\InoutController.class.php 第 139 行.
+NOTIC: [2] Division by zero F:\web\PHP\Shop\Application\Admin\Controller\InoutController.class.php 第 139 行.
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\InoutController.class.php 第 147 行.
+NOTIC: [2] Division by zero F:\web\PHP\Shop\Application\Admin\Controller\InoutController.class.php 第 147 行.
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\InoutController.class.php 第 148 行.
+NOTIC: [2] Division by zero F:\web\PHP\Shop\Application\Admin\Controller\InoutController.class.php 第 148 行.
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\InoutController.class.php 第 149 行.
+NOTIC: [2] Division by zero F:\web\PHP\Shop\Application\Admin\Controller\InoutController.class.php 第 149 行.
+NOTIC: [8] Undefined offset: 0 F:\web\PHP\Shop\Application\Admin\Controller\InoutController.class.php 第 150 行.
+NOTIC: [2] Division by zero F:\web\PHP\Shop\Application\Admin\Controller\InoutController.class.php 第 150 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022980s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000832s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000884s ]
+
+[ 2017-08-14T11:12:25+08:00 ] 127.0.0.1 /index.php/Admin/User/look.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `js_user` [ RunTime:0.0079s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `js_user` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `js_user` WHERE ( sid = 1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `js_user` WHERE ( sid != 1 and sid != 5 and sid !=6 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `js_user` WHERE ( sid =6 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `js_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `js_user` [ RunTime:0.0247s ]
+SQL: SELECT t1.*,t3.tname as tname FROM js_user as t1,js_team as t3 WHERE ( t1.tid=t3.tid ) LIMIT 0,15   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000230s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000419s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.187813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.188021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001530s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001204s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001279s ]
+
+[ 2017-08-14T11:12:33+08:00 ] 127.0.0.1 /index.php/Admin/Login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001565s ]
+
+[ 2017-08-14T11:12:33+08:00 ] 127.0.0.1 /index.php/Admin/Login/log
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035959s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036024s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000870s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000921s ]
+
+[ 2017-08-14T11:12:45+08:00 ] 127.0.0.1 /index.php/Admin/Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001205s ]
+SQL: SHOW COLUMNS FROM `js_user` [ RunTime:0.0332s ]
+SQL: SELECT * FROM `js_user` WHERE `uid` = 10000 AND `uone_pwd` = '123456' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001512s ]
+
+[ 2017-08-14T11:12:45+08:00 ] 127.0.0.1 /index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012962s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000887s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000884s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000934s ]
+
+[ 2017-08-14T11:12:45+08:00 ] 127.0.0.1 /index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000837s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007736s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007814s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002079s ]
+

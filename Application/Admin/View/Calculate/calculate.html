@@ -1,0 +1,113 @@
+<!doctype html>
+
+<!--
+    2017-5-5
+-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>奖金结算</title>
+<link rel="stylesheet" type="text/css" href="__ADMIN__/css/css.css" />
+<script type="text/javascript" src="__ADMIN__/js/jquery.min.js"></script>
+</head>
+
+<body>
+	<div id="pageAll">
+		<div class="pageTop">
+			<div class="page">
+				<img src="__ADMIN__/img/coin02.png" /><span><a>首页</a>&nbsp;-&nbsp;<a
+					href="#">奖金管理</a>&nbsp;-</span>&nbsp;结算当月
+			</div>
+		</div>
+
+		<div class="page">
+			<!-- banner页面样式 -->
+			<div class="connoisseur">
+				<div class="conform">
+					<div class="cfD">
+						<a href="javascript:;" class="pass_tx"><button class="button">结算奖金</button></a>
+					</div>
+				</div>
+				<!-- banner 表格 显示 -->
+				<div class="conShow">
+					<table border="1" cellspacing="0" cellpadding="0">
+						<thead>
+						<tr>
+							<td width="80px" class="tdColor">序号</td>
+							<td width="140px" class="tdColor">用户编号</td>
+							<td width="120px" class="tdColor">奖金金额</td>
+							<td width="180px" class="tdColor">结算时间</td>
+							<td width="120px" class="tdColor">奖金类型</td>
+						</tr>
+						</thead>
+						<tbody>
+						<volist name="data2" id="vol">
+						<tr>
+							<td>{$vol.bid}</td>
+							<td>{$vol.uid}</td>
+							<td>{$vol.bonus_money}</td>
+							<td>{$vol.bonus_time}</td>
+							<td><if condition = "$vol.bonus_type heq 1">注册奖金
+								<elseif condition = "$vol.bonus_type heq 2"/>返单奖金
+								<elseif condition = "$vol.bonus_type heq 3"/>股东分红
+								<else />董事分红
+								</if>
+							</td>
+						</tr>
+						</volist>
+						</tbody>
+					</table>
+					<div class="paging">{$show}</div>
+				</div>
+				<!-- banner 表格 显示 end-->
+			</div>
+			<!-- banner页面样式end -->
+		</div>
+
+	</div>
+
+
+	<!-- 删除弹出框 -->
+	<div class="banDel">
+		<div class="delete">
+			<div class="close">
+				<a><img src="__ADMIN__/img/shanchu.png" /></a>
+			</div>
+			<p class="delP1">你确定要删除此条记录吗？</p>
+			<p class="delP2">
+				<a href="#" class="ok yes">确定</a><a class="ok no">取消</a>
+			</p>
+		</div>
+	</div>
+	<!-- 删除弹出框  end-->
+</body>
+
+<script type="text/javascript">
+	// 广告弹出框
+	$(".delban").click(function(){
+	  $(".banDel").show();
+	});
+	$(".close").click(function(){
+	  $(".banDel").hide();
+	});
+	$(".no").click(function(){
+	  $(".banDel").hide();
+	});
+	// 广告弹出框 end
+
+	$(function(){
+		//通过审核按钮的点击事件
+		$('.pass_tx').on('click',function(){
+			//
+			
+			//带着参数跳转到pass方法
+			window.location.href = '__CONTROLLER__/time_bonus';
+			//console.log(id);
+			
+		})
+	});
+
+	
+</script>
+</html>

@@ -1,0 +1,69 @@
+@charset "utf_8";
+
+body ,h1,ul,h2,input{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url("../img/loginbg.png");
+    width: 100%;
+    background-size:100% 100%;
+}
+
+#content{
+    width: 350px;
+    height: 630px;
+    margin: 0px auto;
+    background-color: #c4d8f3;
+}
+.nav{
+    width: 350px;
+    height: 50px;
+    padding-top: 20px;
+}
+.nav .back{
+    width: 80px;
+    height: 26px;
+    color:#6193da;
+    font-size: 24px;
+    font-family: 微软雅黑;
+    line-height: 24px;
+    margin-left: 10px;
+    background: no-repeat;
+    background-image: url("../img/back.png");
+}
+.list{
+    width: 350px;
+    height: 50px;
+    box-sizing: border-box;
+    font-size: 24px;
+    font-family: 微软雅黑;
+    color: #6193da;
+    padding-top: 8px;
+    padding-left: 10px;
+    background-color:#f6f8fe;
+}
+input{
+    height: 28px;
+    width: 180px;
+    color: #6193da;
+    font-size: 22px;
+   line-height: 50px;
+    margin-left: 10px;
+    padding-left: 10px;
+    border: solid 2px #6193da;
+    border-radius: 4px;
+}
+.queding{
+    width: 310px;
+    height: 50px;
+    margin: 20px auto;
+    color: #ffffff;
+    font-size: 24px;
+    font-family: 微软雅黑;
+    padding-left: 120px;
+    box-sizing: border-box;
+    line-height: 50px;
+    border-radius: 5px;
+    background-color: #6193da;
+}

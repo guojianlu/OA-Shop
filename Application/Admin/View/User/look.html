@@ -1,0 +1,134 @@
+<!doctype html>
+
+<!--
+    2017-4-26
+-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>注册审核</title>
+<link rel="stylesheet" type="text/css" href="__ADMIN__/css/css.css" />
+<link rel="stylesheet" type="text/css" href="__ADMIN__/css/style.css">
+<script type="text/javascript" src="__ADMIN__/js/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="js/page.js" ></script> -->
+</head>
+
+<body>
+	<div id="pageAll">
+		<div class="pageTop">
+			<div class="page">
+				<img src="__ADMIN__/img/coin02.png" /><span><a >首页</a>&nbsp;-&nbsp;<a
+					href="#">会员管理</a>&nbsp;-</span>&nbsp;会员查询
+			</div>
+		</div>
+
+		<div class="page">
+			<!-- banner页面样式 -->
+			<div class="connoisseur">
+				<div class="conform">
+					<div class="cfD">
+						<a href="javascript:;" class="look"><button class="button">查询所有</button></a>
+						<label onclick="noreg()"><input type="radio"  name="styleshoice1" />&nbsp;未审核</label>
+						<label onclick="overg()"><input type="radio"  name="styleshoice1" />&nbsp;已通过</label>
+						<label onclick="nottg()"><input type="radio"  name="styleshoice1" />&nbsp;未通过</label>
+					</div>
+					<div class="cfD">
+							<form action="{:U('search')}" method="post">
+							<input name="id" class="addUser" type="text" placeholder="输入用户编号/ID" />
+							<button class="button" >搜索</button>
+							
+							<a class="addA addA1" onclick="addhy()">添加会员+</a></form>
+						</div>
+				</div>
+				<!-- banner 表格 显示 -->
+				<div class="conShow">
+					<table border="1" cellspacing="0" cellpadding="0">
+						<thead>
+						<tr>
+							<td width="80px" class="tdColor">用户号</td>
+							<td width="80px" class="tdColor">推荐人</td>
+							<td width="100px" class="tdColor">昵称</td>
+							<td width="100px" class="tdColor">姓名</td>
+							<td width="140px" class="tdColor">电话</td>
+							<td width="90px" class="tdColor">注册金额</td>
+							<td width="180px" class="tdColor">银行账号</td>
+							<td width="150px" class="tdColor">所属团队</td>
+							<td width="180px" class="tdColor">注册时间</td>
+							<td width="100px" class="tdColor">身份状态</td>
+						</tr>
+						</thead>
+						<tbody>
+						<volist name="data" id="vol">
+						<tr>
+							<td>{$vol.uid}</td>
+							<td>{$vol.upid}</td>
+							<td>{$vol.umember_name}</td>
+							<td>{$vol.uname}</td>
+							<td>{$vol.utel}</td>
+							<td>{$vol.rid}</td>
+							<td>{$vol.ucard}</td>
+							<td>{$vol.tname}</td>
+							<td>{$vol.uregister_time}</td>
+							<td><if condition = "$vol.sid heq 1">待审核
+								<elseif condition = "$vol.sid heq 2"/>准股东
+								<elseif condition = "$vol.sid heq 3"/>股东
+								<elseif condition = "$vol.sid heq 4"/>执行董事
+								<elseif condition = "$vol.sid heq 5"/>公司
+								<else />未通过
+								</if>
+							</td>
+						</tr>
+						</volist>
+						</tbody>
+						
+					</table>
+					<br>
+					<div>总人数：{$count}&nbsp;&nbsp;未审核人数：{$count_noreg}&nbsp;&nbsp;已通过人数：{$count_overg}&nbsp;&nbsp;未通过人数：{$count_nottg}</div>
+					<div class="paging">{$show}</div>
+
+				</div>
+				<!-- banner 表格 显示 end-->
+			</div>
+			<!-- banner页面样式end -->
+		</div>
+
+	</div>
+</body>
+
+<script type="text/javascript">
+	$(function(){
+		//通过审核按钮的点击事件
+		$('.look').on('click',function(){
+			//事件处理程序
+			window.location.href = '__CONTROLLER__/look';
+			
+		})
+	});
+	function noreg(){
+		//alert("未审核");
+		window.location.href = '__CONTROLLER__/noreg';
+	}
+	function overg(){
+		//alert("已通过");
+		window.location.href = '__CONTROLLER__/overg';
+	}
+	function nottg(){
+		//alert("未通过");
+		window.location.href = '__CONTROLLER__/nottg';
+	}
+	function addhy(){
+		window.parent.frames[0].location.href="{:U('User/useregister')}";
+	}
+	function search(){
+		window.location.href = '__CONTROLLER__/search';
+	}
+
+	$(function(){
+	//搜索按钮的点击事件
+	$('.button').on('click',function(){
+		$('form').submit();
+	})
+});
+</script>
+</html>

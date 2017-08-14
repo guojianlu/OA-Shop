@@ -1,0 +1,42 @@
+[ 2017-07-07T15:23:07+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005340s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-07-07T15:26:27+08:00 ] 127.0.0.1 /shop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002643s ]
+ERR: 无法加载模块:Shop
+
+[ 2017-07-07T15:26:34+08:00 ] 127.0.0.1 /Shop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000840s ]
+ERR: 无法加载模块:Shop
+
+[ 2017-07-07T15:26:37+08:00 ] 127.0.0.1 /Shop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000848s ]
+ERR: 无法加载模块:Shop
+
+[ 2017-07-07T15:54:35+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001944s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-07-07T15:59:09+08:00 ] 127.0.0.1 /Public/Admin/css/__ADMIN__/images/mask.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000816s ]
+ERR: 无法加载模块:Public
+
+[ 2017-07-07T15:59:18+08:00 ] 127.0.0.1 /Public/Admin/css/__ADMIN__/images/mask.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000932s ]
+ERR: 无法加载模块:Public
+

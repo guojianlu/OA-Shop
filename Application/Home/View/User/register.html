@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport"/>
+    <link rel="stylesheet" type="text/css" href="__HOME__/css/register.css">
+</head>
+<body>
+<div id="content">
+    <form action="{:U('zc_tj')}" method="post">
+    <ul class="list">
+        <li>会员编号 &nbsp;<input name="uid" id="huiyuan_id" required readonly type="text"><span id="captcha">获取编号</span></li>
+        <li>会员昵称 &nbsp;<input id="umember_name" required name="umember_name" type="text"></li>
+        <li>会员姓名 &nbsp;<input id="uname" required name="uname" type="text"></li>
+        <li>上级节点 &nbsp;<input id="pid" required name="upid" type="text"></li>
+        <li>建行卡号 &nbsp;<input id="ucard" required name="ucard" type="text" placeholder="输入建行卡号"></li>
+        <li>会员电话 &nbsp;<input id="utel" required name="utel" type="tel"></span></li>
+            <input name="tid" type="hidden">
+            <input name="uregister_time" type="hidden">
+            <input name="ulayer" type="hidden">
+        <li>注册金额 &nbsp;<input name="rid" readonly value="{$money}" type="text"></li>
+        <li class="register">注&emsp;册</li>
+    </ul>
+    </form>
+</div>
+</body>
+<script type="text/javascript" src="__HOME__/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        var captcha = document.getElementById("captcha");
+        captcha.onclick = function () {
+
+            var random = Math.floor(Math.random()*80000 + 20000);
+            var str = random.toString();
+            var  input = document.getElementById("huiyuan_id");
+            input.value = str;
+        }
+    }
+   // jquery代码
+    $(function () {
+        //给登录按钮绑定点击按钮
+        $('.register').on('click',function () {
+           var huiyuan_id = $('#huiyuan_id').val();
+           var umember_name =$('#umember_name').val();
+            var uname = $('#uname').val();
+            var pid =$('#pid').val();
+            var ucard =$('#ucard').val();
+            var utel = $('#utel').val();
+            if(huiyuan_id == '' || umember_name ==''|| uname ==''|| pid ==''|| utel =='' || ucard == ''){
+                window.alert("请先填写必要的注册信息");
+               // window.location.href = "{:U('User/register')}";
+            }else{
+                $('form').submit();
+            }
+        })
+
+    })
+</script>
+
+</html>

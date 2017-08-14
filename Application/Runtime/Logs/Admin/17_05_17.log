@@ -1,0 +1,39 @@
+[ 2017-05-17T21:48:39+08:00 ] 127.0.0.1 /index.php/Admin/Map/abc/10000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001698s ]
+SQL: SHOW COLUMNS FROM `js_user` [ RunTime:0.0098s ]
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\project\js\Application\Admin\Controller\MapController.class.php 第 56 行.
+SQL: SELECT `uid` FROM `js_user` WHERE ( upid = 10000 )  [ RunTime:0.0006s ]
+SQL: SELECT count(*) as count FROM `js_user` WHERE ( upid = 10000 )  [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`uname`,`umember_name` FROM `js_user` WHERE ( uid = 10000 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`uname`,`umember_name` FROM `js_user` WHERE ( uid = 11312 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`uname`,`umember_name` FROM `js_user` WHERE ( uid = 15984 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`uname`,`umember_name` FROM `js_user` WHERE ( uid = 20001 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`uname`,`umember_name` FROM `js_user` WHERE ( uid = 20002 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`uname`,`umember_name` FROM `js_user` WHERE ( uid = 20003 ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-05-17T21:48:41+08:00 ] 127.0.0.1 /index.php/Admin/Map/abc/20001
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001629s ]
+SQL: SHOW COLUMNS FROM `js_user` [ RunTime:0.0107s ]
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\project\js\Application\Admin\Controller\MapController.class.php 第 56 行.
+SQL: SELECT `uid` FROM `js_user` WHERE ( upid = 20001 )  [ RunTime:0.0008s ]
+SQL: SELECT count(*) as count FROM `js_user` WHERE ( upid = 20001 )  [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`uname`,`umember_name` FROM `js_user` WHERE ( uid = 30001 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `uid`,`uname`,`umember_name` FROM `js_user` WHERE ( uid = 30002 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`uname`,`umember_name` FROM `js_user` WHERE ( uid = 30005 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `uid`,`uname`,`umember_name` FROM `js_user` WHERE ( uid = 30006 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `uid`,`uname`,`umember_name` FROM `js_user` WHERE ( uid = 30007 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `uid`,`uname`,`umember_name` FROM `js_user` WHERE ( uid = 36620 ) LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-05-17T21:48:58+08:00 ] 127.0.0.1 /index.php/Admin/Loginother/checkLoginother.html
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2017-05-17T21:49:56+08:00 ] 127.0.0.1 /index.php/Admin/Loginother/checkLoginother.html
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2017-05-17T21:51:05+08:00 ] 127.0.0.1 /index.php/Admin/Loginother/checkLoginother.html
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+

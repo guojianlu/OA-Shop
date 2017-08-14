@@ -1,0 +1,110 @@
+@charset "utf_8";
+
+body ,h1,ul,h2,div,p,input{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("../img/loginbg.png");
+    width: 100%;
+    background-size:100% 100%;
+}
+#content{
+    width: 350px;
+    height: 350px;
+    margin: 160px auto;
+    border-radius: 35px;
+    padding-top: 35px;
+   box-sizing: border-box;
+    /*background-color: #eee;*/
+    background-image: url("../img/a.png");
+}
+/*#content .list{*/
+    /*width: inherit;*/
+    /*height: 300px;*/
+    /*margin-top: 60px;*/
+/*}*/
+.list .item{
+    width: 270px;
+    height: 60px;
+    /*background-color: red;*/
+    margin-top: 10px;
+    margin-left: 40px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.list .item span{
+    font-size: 26px;
+    color: #7aafcc;
+    font-family: 微软雅黑;
+}
+.list .item input{
+    max-width: 175px;
+    height:30px;
+    /*color: #c4d8f3;*/
+    color:  #6193da;
+    font-size: 22px;
+    border-radius: 4px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    /*background-color: transparent;*/
+}
+.list .item .line{
+    width: 260px;
+    height: 3px;
+    margin-top: 5px;
+    background-color: #57a3c5;
+}
+.list .item .captcha{
+    max-width: 80px;
+}
+.list .item .verify{
+    width: 80px;
+    height: 32px;
+    float: right;
+    margin-top: 5px;
+    margin-right: 7px;
+}
+
+img.verifyimg{
+    width: inherit;
+    height: 32px;
+    background-size: 100% 100%;
+}
+.list .login{
+    font-family: 微软雅黑;
+    color: #5696bb;
+    font-size: 26px;
+    width: 265px;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    float: left;
+    margin-left: 50px;
+    padding-left: 100px;
+    background-color: #d4e3ed;
+    /*background-color:  #6193da;*/
+
+
+}
+/*.list .wangji{*/
+    /*font-family: 微软雅黑;*/
+    /*color: #5696bb;*/
+    /*font-size: 26px;*/
+    /*width: 115px;*/
+    /*height: 40px;*/
+    /*border-radius: 10px;*/
+    /*float: right;*/
+    /*margin-right: 40px;*/
+    /*padding-left: 10px;*/
+    /*background-color: #d4e3ed;*/
+/*}*/
+
+
+
+
+
+
+
+
+
